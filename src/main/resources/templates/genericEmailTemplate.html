@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${subject}">Email from Semita</title>
+</head>
+<body>
+<p>Dear <span th:text="${name}">User</span>,</p>
+<p th:utext="${body}">This is the email body content.</p>
+<p>Thank you for using <strong th:text="${appName}">Semita</strong>.</p>
+<p>Best regards,</p>
+<p>The Semita Team</p>
+</body>
+</html>
